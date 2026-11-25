@@ -1,47 +1,93 @@
+<!-- ANIMATED HEADER BANNER -->
 <div align="center">
-  ![Mask type](https://wsrv.nl/?url=avatars.githubusercontent.com/u/216705924?v=4&size=64&w=300&h=300&fit=cover&mask=circle)
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1e1b4b,50:4c1d95,100:8b5cf6&height=210&section=header&text=Horizon&fontSize=58&fontColor=ffffff&fontAlignY=38&desc=Building%20modern%20web%20apps%2C%20tools%20%26%20digital%20experiences&descSize=17&descAlignY=60&descColor=ddd6fe&animation=fadeIn" alt="Header Banner" />
+</div>
+
+<div align="center">
+  <a href="https://horizov.site">
+    <img src="https://img.shields.io/badge/PORTFOLIO-horizov.site-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Website" />
+  </a>
+  <img src="https://img.shields.io/badge/LOCATION-Germany-1F2937?style=for-the-badge&logo=googlemaps&logoColor=8B5CF6" alt="Location" />
+  <img src="https://komarev.com/ghpvc/?username=kevin-b-official&style=for-the-badge&color=8B5CF6&label=PROFILE+VIEWS" alt="Profile Views" />
+</div>
+
+<br />
+
+<!-- 2-COLUMN INTRO & CURRENT FOCUS -->
+<table>
+  <tr>
+    <td width="55%" valign="top">
+      <h3>⚡ <code>whoami</code></h3>
+      <p>
+        Hey, I'm <b>Horizon</b> — a developer from Germany focused on crafting fast, clean, and user-centric software.
+      </p>
+      <p>
+        From browser extensions and desktop clients to full-stack web applications, I enjoy turning ideas into polished products with modern tooling and sharp UI design.
+      </p>
+      <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2800&pause=1000&color=A78BFA&vCenter=true&width=420&height=30&lines=%3E+TypeScript+%26+React+enthusiast;%3E+Obsessed+with+clean+UI+%26+performance;%3E+Always+shipping+something+new..." alt="Typing Terminal" />
+    </td>
+    <td width="45%" valign="top">
+      <h3>🎯 Current Focus</h3>
+      <ul>
+        <li>🔭 Building & refining <b>LofiHaven</b> ecosystem</li>
+        <li>🧩 Maintaining <b>Blobgame.io</b> browser tools</li>
+        <li>⚙️ Full-stack architectures with <b>Next.js & Supabase</b></li>
+        <li>🎨 Designing minimalist, high-speed interfaces</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<br />
+
+<!-- FEATURED REPOSITORIES (DYNAMIC CARDS) -->
+<h3>🚀 Featured Repositories</h3>
+
+<div align="center">
+  <a href="https://github.com/kevin-b-official/Blobgame.io-Official-Web-Extension">
+    <img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=kevin-b-official&repo=Blobgame.io-Official-Web-Extension&bg_color=0D1117&border_color=30363D&title_color=A78BFA&icon_color=8B5CF6&text_color=C9D1D9" alt="Blobgame Extension" />
+  </a>
+  <a href="https://github.com/kevin-b-official/lofihaven-desktop-app">
+    <img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=kevin-b-official&repo=lofihaven-desktop-app&bg_color=0D1117&border_color=30363D&title_color=A78BFA&icon_color=8B5CF6&text_color=C9D1D9" alt="LofiHaven Desktop" />
+  </a>
   <br />
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=8B5CF6&center=true&vCenter=true&width=500&lines=Hi%2C%20I'm%20Horizon%3BBuilding%20modern%20software%3B5%20Public%20Repos%20%C2%B7%201%20Followers" alt="Typing SVG" />
+  <a href="https://github.com/kevin-b-official/lofihaven-translations">
+    <img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=kevin-b-official&repo=lofihaven-translations&bg_color=0D1117&border_color=30363D&title_color=A78BFA&icon_color=8B5CF6&text_color=C9D1D9" alt="LofiHaven Translations" />
+  </a>
+  <a href="https://github.com/kevin-b-official/-JIN2-ASCII">
+    <img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=kevin-b-official&repo=-JIN2-ASCII&bg_color=0D1117&border_color=30363D&title_color=A78BFA&icon_color=8B5CF6&text_color=C9D1D9" alt="-JIN2-ASCII" />
+  </a>
 </div>
 
+<br />
 
-## 👋 About Me
-
-- 📍 Based in **Germany**
-- 🌐 Website: [https://horizov.site](https://horizov.site)
-
-## 🚀 Featured Repositories
-
-- **[-JIN2-ASCII](https://github.com/kevin-b-official/-JIN2-ASCII)**  ⭐ 0
-- **[Blobgame.io-Official-Web-Extension](https://github.com/kevin-b-official/Blobgame.io-Official-Web-Extension)** `JavaScript` ⭐ 0 — A lightweight, open-source browser extension for Blobgame.io featuring performance improvements, reduced website load, experimental features, and community voting for future updates.
-- **[lofihaven-translations](https://github.com/kevin-b-official/lofihaven-translations)**  ⭐ 0 — Community-driven translations for LofiHaven – the cozy digital hideaway for focus and relaxation. Help us bring LofiHaven to the world! 🌍✨
-- **[lofihaven-desktop-app](https://github.com/kevin-b-official/lofihaven-desktop-app)**  ⭐ 0
-
-## 📊 GitHub Analytics
+<!-- TECH STACK -->
+<h3>🛠️ Tech Stack & Tools</h3>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kevin-b-official&show_icons=true&theme=dracula&hide_border=true&bg_color=00000000" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kevin-b-official&layout=compact&theme=dracula&hide_border=true&bg_color=00000000" alt="Top Languages" />
+
+| Category | Technologies |
+| :--- | :--- |
+| **Languages** | ![TypeScript](https://img.shields.io/badge/TypeScript-0D1117?style=flat-square&logo=typescript&logoColor=3178C6) ![JavaScript](https://img.shields.io/badge/JavaScript-0D1117?style=flat-square&logo=javascript&logoColor=F7DF1E) |
+| **Frontend** | ![React](https://img.shields.io/badge/React-0D1117?style=flat-square&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-0D1117?style=flat-square&logo=nextdotjs&logoColor=white) ![Vue.js](https://img.shields.io/badge/Vue.js-0D1117?style=flat-square&logo=vuedotjs&logoColor=4FC08D) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-0D1117?style=flat-square&logo=tailwindcss&logoColor=06B6D4) ![Vite](https://img.shields.io/badge/Vite-0D1117?style=flat-square&logo=vite&logoColor=646CFF) |
+| **Backend & DB** | ![Node.js](https://img.shields.io/badge/Node.js-0D1117?style=flat-square&logo=nodedotjs&logoColor=339933) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0D1117?style=flat-square&logo=postgresql&logoColor=4169E1) ![MongoDB](https://img.shields.io/badge/MongoDB-0D1117?style=flat-square&logo=mongodb&logoColor=47A248) ![Supabase](https://img.shields.io/badge/Supabase-0D1117?style=flat-square&logo=supabase&logoColor=3FCF8E) |
+| **DevOps & Cloud** | ![Vercel](https://img.shields.io/badge/Vercel-0D1117?style=flat-square&logo=vercel&logoColor=white) ![Git](https://img.shields.io/badge/Git-0D1117?style=flat-square&logo=git&logoColor=F05032) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-0D1117?style=flat-square&logo=githubactions&logoColor=2088FF) |
+
 </div>
+
+<br />
+
+<!-- ANALYTICS DASHBOARD -->
+<h3>📊 GitHub Telemetry</h3>
+
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=kevin-b-official&theme=dracula&hide_border=true&background=00000000" alt="GitHub Streak" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=kevin-b-official&show_icons=true&bg_color=0D1117&border_color=30363D&title_color=A78BFA&icon_color=8B5CF6&text_color=C9D1D9" alt="GitHub Stats" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kevin-b-official&layout=compact&bg_color=0D1117&border_color=30363D&title_color=A78BFA&text_color=C9D1D9" alt="Top Languages" />
+  <br />
+  <img src="https://streak-stats.demolab.com?user=kevin-b-official&background=0D1117&border=30363D&ring=8B5CF6&fire=A78BFA&currStreakLabel=A78BFA&sideLabels=8B949E&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E" alt="GitHub Streak" />
 </div>
 
----
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=kevin-b-official&style=for-the-badge&color=8b5cf6" alt="Profile Views" />
-</p>
-
-### 🛠️ Tech Stack
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
-
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+<!-- FOOTER WAVE -->
+<div align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:8b5cf6,50:4c1d95,100:1e1b4b&height=100&section=footer" alt="Footer Wave" />
+</div>
