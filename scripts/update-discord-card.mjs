@@ -33,8 +33,29 @@ function formatElapsed(startMs) {
   return `${minutes}M`;
 }
 
-function getStatusConfig(status) {
-  switch (status) {
+function getDeviceList(data) {
+  const devices = [];
+  if (data.active_on_discord_desktop) devices.push("DESKTOP");
+  if (data.active_on_discord_mobile) devices.push("MOBILE");
+  if (data.active_on_discord_web) devices.push("WEB");
+  if (data.active_on_discord_vr) devices.push("VR");
+  return devices;
+}
+
+function getStatusConfig(data) {
+  const rawStatus = data.discord_status;
+  const hasActiveDevice = getDeviceList(data).length > 0;
+  const hasActivity =
+    Boolean(data.listening_to_spotify) ||
+    (Array.isArray(data.activities) && data.activities.length > 0);
+
+  // Falls Lanyard kurz "offline" meldet, obwohl ein Client aktiv ist oder Activities laufen
+  const effectiveStatus =
+    rawStatus === "offline" && (hasActiveDevice || hasActivity)
+      ? "online"
+      : rawStatus;
+
+  switch (effectiveStatus) {
     case "online":
       return { color: "#4ade80", label: "ONLINE" };
     case "idle":
@@ -44,15 +65,6 @@ function getStatusConfig(status) {
     default:
       return { color: "#a855f7", label: "OFFLINE" };
   }
-}
-
-function getDeviceLabel(data) {
-  const devices = [];
-  if (data.active_on_discord_desktop) devices.push("DESKTOP");
-  if (data.active_on_discord_mobile) devices.push("MOBILE");
-  if (data.active_on_discord_web) devices.push("WEB");
-  if (data.active_on_discord_vr) devices.push("VR");
-  return devices.length > 0 ? devices.join("+") : "NONE";
 }
 
 function pickPrimaryActivity(data) {
@@ -129,9 +141,11 @@ async function fetchLanyardPresence(userId) {
 }
 
 function buildSvg(data) {
-  const statusCfg = getStatusConfig(data.discord_status);
+  const statusCfg = getStatusConfig(data);
   const activity = pickPrimaryActivity(data);
-  const device = getDeviceLabel(data);
+  const devices = getDeviceList(data);
+  const deviceLabel = devices.length > 0 ? devices.join("+") : "IDLE";
+
   const displayName = truncate(
     data.discord_user?.global_name || data.discord_user?.display_name || "Kevin",
     18
@@ -193,7 +207,7 @@ function buildSvg(data) {
     ${escapeXml(activity.title)}
   </text>
   <text x="168" y="124" fill="#fbcfe8" font-size="13" font-family="monospace" letter-spacing="1">
-    ${escapeXml(`${displayName.toUpperCase()} (@${handle})${tag} · ${statusCfg.label} [${device}] · ${activity.meta}`)}
+    ${escapeXml(`${displayName.toUpperCase()} (@${handle})${tag} · ${statusCfg.label} [${deviceLabel}] · ${activity.meta}`)}
   </text>
 
   <rect x="1020" y="34" width="130" height="8" fill="#3b1254" />
@@ -223,6 +237,13 @@ function buildSvg(data) {
 
 async function main() {
   const data = await fetchLanyardPresence(DISCORD_USER_ID);
+  console.log("Lanyard status:", {
+    discord_status: data.discord_status,
+    desktop: data.active_on_discord_desktop,
+    mobile: data.active_on_discord_mobile,
+    web: data.active_on_discord_web,
+    activities_count: Array.isArray(data.activities) ? data.activities.length : 0,
+  });
   const svgContent = buildSvg(data);
   await fs.writeFile(OUTPUT_PATH, svgContent, "utf8");
   console.log("Updated discord-sakura-card.svg successfully.");
