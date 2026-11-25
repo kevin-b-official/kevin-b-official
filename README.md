@@ -1,14 +1,19 @@
-<!-- ANIMATED HEADER BANNER -->
 <div align="center">
-
 ![Header Banner](https://capsule-render.vercel.app/api?type=waving&color=8b5cf6&height=200&section=header&text=Horizon&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Building%20modern%20web%20apps%20and%20tools&descSize=18&descAlignY=60&descColor=ede9fe)
 
 <div align="center">
   <a href="https://horizov.site">
-    <img src="https://img.shields.io/badge/PORTFOLIO-horizov.site-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white" alt="Website" />
+    <img src="https://img.shields.io/badge/PORTFOLIO-horizov.site-0D1117?style=for-the-badge&logo=vercel&logoColor=A78BFA&labelColor=0D1117" alt="Website" />
   </a>
-  <img src="https://img.shields.io/badge/LOCATION-Germany-1F2937?style=for-the-badge&logo=googlemaps&logoColor=8B5CF6" alt="Location" />
-  <img src="https://komarev.com/ghpvc/?username=kevin-b-official&style=for-the-badge&color=8B5CF6&label=PROFILE+VIEWS" alt="Profile Views" />
+  <a href="https://discord.gg/ZAFA839gMe">
+    <img src="https://img.shields.io/badge/DISCORD-Horizon-0D1117?style=for-the-badge&logo=discord&logoColor=A78BFA&labelColor=0D1117" alt="Discord" />
+  </a>
+  <a href="mailto:contact@horizov.site">
+    <img src="https://img.shields.io/badge/EMAIL-contact@horizov.site-0D1117?style=for-the-badge&logo=gmail&logoColor=A78BFA&labelColor=0D1117" alt="Email" />
+  </a>
+  <br />
+  <img src="https://img.shields.io/badge/LOCATION-Germany-0D1117?style=for-the-badge&logo=googlemaps&logoColor=8B5CF6&labelColor=0D1117" alt="Location" />
+  <img src="https://komarev.com/ghpvc/?username=kevin-b-official&style=for-the-badge&color=8b5cf6&label=PROFILE+VIEWS" alt="Profile Views" />
 </div>
 
 <br />
@@ -17,7 +22,10 @@
 <table>
   <tr>
     <td width="55%" valign="top">
-      <h3>⚡ <code>whoami</code></h3>
+      <h3>
+        <img src="https://api.iconify.design/lucide/terminal.svg?color=%23a78bfa" width="20" height="20" align="absmiddle" />
+        &nbsp;<code>whoami</code>
+      </h3>
       <p>
         Hey, I'm <b>Horizon</b> — a developer from Germany focused on crafting fast, clean, and user-centric software.
       </p>
@@ -27,21 +35,27 @@
       <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=2800&pause=1000&color=A78BFA&vCenter=true&width=420&height=30&lines=%3E+TypeScript+%26+React+enthusiast;%3E+Obsessed+with+clean+UI+%26+performance;%3E+Always+shipping+something+new..." alt="Typing Terminal" />
     </td>
     <td width="45%" valign="top">
-      <h3>🎯 Current Focus</h3>
-      <ul>
-        <li>🔭 Building & refining <b>LofiHaven</b> ecosystem</li>
-        <li>🧩 Maintaining <b>Blobgame.io</b> browser tools</li>
-        <li>⚙️ Full-stack architectures with <b>Next.js & Supabase</b></li>
-        <li>🎨 Designing minimalist, high-speed interfaces</li>
-      </ul>
+      <h3>
+        <img src="https://api.iconify.design/lucide/crosshair.svg?color=%23a78bfa" width="20" height="20" align="absmiddle" />
+        &nbsp;Current Focus
+      </h3>
+      <p>
+        <img src="https://api.iconify.design/lucide/headphones.svg?color=%238b5cf6" width="16" height="16" align="absmiddle" />&nbsp;&nbsp;Building &amp; refining <b>LofiHaven</b> ecosystem<br />
+        <img src="https://api.iconify.design/lucide/puzzle.svg?color=%238b5cf6" width="16" height="16" align="absmiddle" />&nbsp;&nbsp;Maintaining <b>Blobgame.io</b> browser tools<br />
+        <img src="https://api.iconify.design/lucide/layers.svg?color=%238b5cf6" width="16" height="16" align="absmiddle" />&nbsp;&nbsp;Full-stack architectures with <b>Next.js &amp; Supabase</b><br />
+        <img src="https://api.iconify.design/lucide/sparkles.svg?color=%238b5cf6" width="16" height="16" align="absmiddle" />&nbsp;&nbsp;Designing minimalist, high-speed interfaces
+      </p>
     </td>
   </tr>
 </table>
 
 <br />
 
-<!-- FEATURED REPOSITORIES (DYNAMIC CARDS) -->
-<h3>🚀 Featured Repositories</h3>
+<!-- FEATURED REPOSITORIES -->
+<h3>
+  <img src="https://api.iconify.design/lucide/folder-git-2.svg?color=%23a78bfa" width="22" height="22" align="absmiddle" />
+  &nbsp;Featured Repositories
+</h3>
 
 <div align="center">
   <a href="https://github.com/kevin-b-official/Blobgame.io-Official-Web-Extension">
@@ -62,7 +76,10 @@
 <br />
 
 <!-- TECH STACK -->
-<h3>🛠️ Tech Stack & Tools</h3>
+<h3>
+  <img src="https://api.iconify.design/lucide/cpu.svg?color=%23a78bfa" width="22" height="22" align="absmiddle" />
+  &nbsp;Tech Stack &amp; Tools
+</h3>
 
 <div align="center">
 
@@ -78,7 +95,10 @@
 <br />
 
 <!-- ANALYTICS DASHBOARD -->
-<h3>📊 GitHub Telemetry</h3>
+<h3>
+  <img src="https://api.iconify.design/lucide/activity.svg?color=%23a78bfa" width="22" height="22" align="absmiddle" />
+  &nbsp;GitHub Telemetry
+</h3>
 
 <div align="center">
   <img height="170" src="https://github-readme-stats.vercel.app/api?username=kevin-b-official&show_icons=true&bg_color=0D1117&border_color=30363D&title_color=A78BFA&icon_color=8B5CF6&text_color=C9D1D9" alt="GitHub Stats" />
@@ -100,5 +120,5 @@
 
 <!-- FOOTER WAVE -->
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:8b5cf6,50:4c1d95,100:1e1b4b&height=100&section=footer" alt="Footer Wave" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=8b5cf6&height=110&section=footer" alt="Footer Wave" />
 </div>
