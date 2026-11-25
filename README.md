@@ -1,6 +1,6 @@
 <div align="center">
-  
-![Header Banner](https://capsule-render.vercel.app/api?type=waving&color=8b5cf6&height=200&section=header&text=Horizon&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Building%20modern%20web%20apps%20and%20tools&descSize=18&descAlignY=60&descColor=ede9fe)
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:8B5CF6,100:4F46E5&height=200&section=header&text=Horizon&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Building%20modern%20web%20apps%20and%20tools&descAlignY=60&descSize=16&descColor=ede9fe&animation=fadeIn" alt="Header Banner" />
+</div>
 
 <div align="center">
   <a href="https://horizov.site">
