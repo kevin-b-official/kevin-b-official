@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8B5CF6,100:4F46E5&height=200&section=header&text=Horizon&fontSize=46&fontColor=ffffff&fontAlignY=38&desc=Developer%20%26%20Open%20Source%20Enthusiast&descAlignY=60&descSize=16&animation=fadeIn" alt="Horizon" width="100%" />
+  <img src="https://avatars.githubusercontent.com/u/216705924?v=4&size=512" />
   <br />
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=8B5CF6&center=true&vCenter=true&width=500&lines=Hi%2C%20I'm%20Horizon%3BBuilding%20modern%20software%3B5%20Public%20Repos%20%C2%B7%201%20Followers" alt="Typing SVG" />
 </div>
