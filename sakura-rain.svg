@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 110" width="100%" height="110">
+  <defs>
+    <g id="rain-petal">
+      <rect x="10" y="0" width="10" height="5" fill="#fbcfe8" />
+      <rect x="5" y="5" width="20" height="5" fill="#f9a8d4" />
+      <rect x="0" y="10" width="30" height="5" fill="#f472b6" />
+      <rect x="5" y="15" width="20" height="5" fill="#ec4899" />
+      <rect x="12" y="10" width="6" height="5" fill="#ffffff" />
+    </g>
+
+    <style>
+      .rp {
+        animation-name: rainDrift;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      .r1 { animation-duration: 4.2s; animation-delay: 0s; }
+      .r2 { animation-duration: 5.1s; animation-delay: -0.9s; }
+      .r3 { animation-duration: 3.8s; animation-delay: -1.7s; }
+      .r4 { animation-duration: 4.7s; animation-delay: -2.4s; }
+      .r5 { animation-duration: 5.4s; animation-delay: -1.2s; }
+      .r6 { animation-duration: 4.0s; animation-delay: -3.1s; }
+      .r7 { animation-duration: 4.9s; animation-delay: -0.5s; }
+      .r8 { animation-duration: 3.6s; animation-delay: -2.8s; }
+
+      @keyframes rainDrift {
+        0% {
+          transform: translate(0px, -24px);
+          opacity: 0;
+        }
+        15% {
+          opacity: 0.9;
+        }
+        85% {
+          opacity: 0.85;
+        }
+        100% {
+          transform: translate(-38px, 125px);
+          opacity: 0;
+        }
+      }
+    </style>
+  </defs>
+
+  <g class="rp r1"><use href="#rain-petal" x="160" y="0" transform="scale(0.8)" /></g>
+  <g class="rp r2"><use href="#rain-petal" x="380" y="0" transform="scale(0.7)" /></g>
+  <g class="rp r3"><use href="#rain-petal" x="620" y="0" transform="scale(0.85)" /></g>
+  <g class="rp r4"><use href="#rain-petal" x="860" y="0" transform="scale(0.65)" /></g>
+  <g class="rp r5"><use href="#rain-petal" x="1120" y="0" transform="scale(0.75)" /></g>
+  <g class="rp r6"><use href="#rain-petal" x="1380" y="0" transform="scale(0.7)" /></g>
+  <g class="rp r7"><use href="#rain-petal" x="1620" y="0" transform="scale(0.8)" /></g>
+  <g class="rp r8"><use href="#rain-petal" x="1860" y="0" transform="scale(0.65)" /></g>
+</svg>
