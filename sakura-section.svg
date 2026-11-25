@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 64" width="100%" height="64" shape-rendering="crispEdges">
+  <defs>
+    <linearGradient id="sec-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d0414" />
+      <stop offset="50%" stop-color="#260c36" />
+      <stop offset="100%" stop-color="#0d0414" />
+    </linearGradient>
+    <style>
+      .sp-dot {
+        animation: driftX 5.5s linear infinite;
+      }
+      .d2 { animation-delay: -1.8s; animation-duration: 6.4s; }
+      .d3 { animation-delay: -3.4s; animation-duration: 4.9s; }
+      @keyframes driftX {
+        0% { transform: translate(0px, -10px); opacity: 0; }
+        20% { opacity: 0.9; }
+        80% { opacity: 0.85; }
+        100% { transform: translate(-45px, 68px); opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="64" fill="url(#sec-grad)" />
+  <rect x="0" y="0" width="1200" height="3" fill="#ec4899" />
+  <rect x="0" y="61" width="1200" height="3" fill="#831843" />
+
+  <rect x="24" y="24" width="16" height="8" fill="#f472b6" />
+  <rect x="28" y="20" width="8" height="16" fill="#fbcfe8" />
+  <rect x="52" y="34" width="12" height="6" fill="#ec4899" />
+
+  <rect x="1160" y="24" width="16" height="8" fill="#f472b6" />
+  <rect x="1164" y="20" width="8" height="16" fill="#fbcfe8" />
+  <rect x="1136" y="34" width="12" height="6" fill="#ec4899" />
+
+  <rect x="84" y="31" width="420" height="2" fill="#f472b6" />
+  <rect x="696" y="31" width="420" height="2" fill="#f472b6" />
+
+  <g class="sp-dot">
+    <rect x="320" y="4" width="10" height="6" fill="#f9a8d4" />
+    <rect x="323" y="2" width="4" height="10" fill="#ffffff" />
+  </g>
+  <g class="sp-dot d2">
+    <rect x="610" y="4" width="10" height="6" fill="#f472b6" />
+    <rect x="613" y="2" width="4" height="10" fill="#fbcfe8" />
+  </g>
+  <g class="sp-dot d3">
+    <rect x="910" y="4" width="10" height="6" fill="#ec4899" />
+    <rect x="913" y="2" width="4" height="10" fill="#ffffff" />
+  </g>
+</svg>

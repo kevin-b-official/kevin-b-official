@@ -1,0 +1,38 @@
+name: Update Discord Sakura Card
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-card:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch Lanyard presence and render SVG
+        env:
+          DISCORD_USER_ID: ${{ secrets.DISCORD_USER_ID }}
+        run: node scripts/update-discord-card.mjs
+
+      - name: Commit and push if SVG changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add discord-sakura-card.svg
+          if git diff --staged --quiet; then
+            echo "No changes to discord-sakura-card.svg."
+          else
+            git commit -m "chore: update discord sakura activity card"
+            git push
+          fi

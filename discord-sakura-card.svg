@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 170" width="100%" height="170" shape-rendering="crispEdges">
+  <defs>
+    <linearGradient id="dc-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#12061c" />
+      <stop offset="50%" stop-color="#240b33" />
+      <stop offset="100%" stop-color="#12061c" />
+    </linearGradient>
+    <style>
+      .pulse {
+        animation: statusPulse 2.4s steps(2, end) infinite;
+      }
+      .petal {
+        animation: dcPetal 5.8s linear infinite;
+      }
+      .p2 { animation-delay: -1.6s; animation-duration: 6.7s; }
+      .p3 { animation-delay: -3.1s; animation-duration: 5.2s; }
+      @keyframes statusPulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.35; }
+      }
+      @keyframes dcPetal {
+        0% { transform: translate(0px, -18px); opacity: 0; }
+        15% { opacity: 0.9; }
+        85% { opacity: 0.85; }
+        100% { transform: translate(-36px, 180px); opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="170" fill="url(#dc-bg)" />
+  <rect x="16" y="12" width="1168" height="146" fill="#180826" stroke="#ec4899" stroke-width="4" />
+  <rect x="24" y="20" width="1152" height="130" fill="#12051d" stroke="#831843" stroke-width="2" />
+
+  <rect x="52" y="42" width="86" height="86" fill="#2b0e3d" stroke="#f472b6" stroke-width="4" />
+  <rect x="68" y="58" width="54" height="54" fill="#3b1254" />
+  <rect x="87" y="68" width="16" height="8" fill="#fbcfe8" />
+  <rect x="91" y="64" width="8" height="16" fill="#f472b6" />
+  <rect x="79" y="84" width="32" height="12" fill="#ec4899" />
+  <rect x="87" y="80" width="16" height="20" fill="#f9a8d4" />
+
+  <g class="pulse">
+    <rect x="124" y="114" width="20" height="20" fill="#12051d" />
+    <rect x="128" y="118" width="12" height="12" fill="#f472b6" />
+  </g>
+
+  <text x="168" y="64" fill="#f9a8d4" font-size="14" font-family="monospace" letter-spacing="3">
+    DISCORD PRESENCE // HORIZON&apos;S DEV LOUNGE
+  </text>
+  <text x="168" y="96" fill="#ffffff" font-size="24" font-weight="bold" font-family="monospace" letter-spacing="2">
+    BUILDING &amp; CODING IN SAKURA NIGHT
+  </text>
+  <text x="168" y="124" fill="#fbcfe8" font-size="14" font-family="monospace" letter-spacing="1">
+    STATUS: ONLINE  |  TYPE: CODE &amp; LOFI  |  THEME: PIXEL SAKURA
+  </text>
+
+  <rect x="1020" y="34" width="130" height="8" fill="#3b1254" />
+  <rect x="1060" y="42" width="80" height="6" fill="#2b0e3d" />
+  <rect x="1028" y="28" width="14" height="8" fill="#fbcfe8" />
+  <rect x="1032" y="24" width="6" height="16" fill="#f472b6" />
+  <rect x="1084" y="36" width="14" height="8" fill="#f9a8d4" />
+  <rect x="1088" y="32" width="6" height="16" fill="#ec4899" />
+  <rect x="1128" y="28" width="14" height="8" fill="#fbcfe8" />
+  <rect x="1132" y="24" width="6" height="16" fill="#ffffff" />
+
+  <g class="petal">
+    <rect x="780" y="12" width="12" height="6" fill="#f9a8d4" />
+    <rect x="783" y="10" width="6" height="10" fill="#ffffff" />
+  </g>
+  <g class="petal p2">
+    <rect x="920" y="12" width="12" height="6" fill="#f472b6" />
+    <rect x="923" y="10" width="6" height="10" fill="#fbcfe8" />
+  </g>
+  <g class="petal p3">
+    <rect x="1060" y="12" width="12" height="6" fill="#ec4899" />
+    <rect x="1063" y="10" width="6" height="10" fill="#ffffff" />
+  </g>
+</svg>
