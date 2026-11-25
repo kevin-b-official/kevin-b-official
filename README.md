@@ -1,7 +1,7 @@
 <!-- ANIMATED HEADER BANNER -->
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1e1b4b,50:4c1d95,100:8b5cf6&height=210&section=header&text=Horizon&fontSize=58&fontColor=ffffff&fontAlignY=38&desc=Building%20modern%20web%20apps%2C%20tools%20%26%20digital%20experiences&descSize=17&descAlignY=60&descColor=ddd6fe&animation=fadeIn" alt="Header Banner" />
-</div>
+
+![Header Banner](https://capsule-render.vercel.app/api?type=waving&color=8b5cf6&height=200&section=header&text=Horizon&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Building%20modern%20web%20apps%20and%20tools&descSize=18&descAlignY=60&descColor=ede9fe)
 
 <div align="center">
   <a href="https://horizov.site">
@@ -85,6 +85,17 @@
   <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kevin-b-official&layout=compact&bg_color=0D1117&border_color=30363D&title_color=A78BFA&text_color=C9D1D9" alt="Top Languages" />
   <br />
   <img src="https://streak-stats.demolab.com?user=kevin-b-official&background=0D1117&border=30363D&ring=8B5CF6&fire=A78BFA&currStreakLabel=A78BFA&sideLabels=8B949E&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E" alt="GitHub Streak" />
+</div>
+
+<br />
+
+<!-- CONTRIBUTION SNAKE -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kevin-b-official/kevin-b-official/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kevin-b-official/kevin-b-official/output/github-contribution-grid-snake.svg" />
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/kevin-b-official/kevin-b-official/output/github-contribution-grid-snake-dark.svg" />
+  </picture>
 </div>
 
 <!-- FOOTER WAVE -->
