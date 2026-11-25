@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://avatars.githubusercontent.com/u/216705924?v=4&size=512" />
+  ![Mask type](https://wsrv.nl/?url=avatars.githubusercontent.com/u/216705924?v=4&size=64&w=300&h=300&fit=cover&mask=circle)
   <br />
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=8B5CF6&center=true&vCenter=true&width=500&lines=Hi%2C%20I'm%20Horizon%3BBuilding%20modern%20software%3B5%20Public%20Repos%20%C2%B7%201%20Followers" alt="Typing SVG" />
 </div>
