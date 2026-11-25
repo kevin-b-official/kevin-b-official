@@ -24,6 +24,15 @@ function truncate(text = "", maxLength = 46) {
   return `${clean.slice(0, maxLength - 1)}…`;
 }
 
+function formatElapsed(startMs) {
+  if (!startMs || Number.isNaN(Number(startMs))) return "";
+  const diffSec = Math.max(0, Math.floor((Date.now() - Number(startMs)) / 1000));
+  const hours = Math.floor(diffSec / 3600);
+  const minutes = Math.floor((diffSec % 3600) / 60);
+  if (hours > 0) return `${hours}H ${minutes}M`;
+  return `${minutes}M`;
+}
+
 function getStatusConfig(status) {
   switch (status) {
     case "online":
@@ -35,6 +44,15 @@ function getStatusConfig(status) {
     default:
       return { color: "#a855f7", label: "OFFLINE" };
   }
+}
+
+function getDeviceLabel(data) {
+  const devices = [];
+  if (data.active_on_discord_desktop) devices.push("DESKTOP");
+  if (data.active_on_discord_mobile) devices.push("MOBILE");
+  if (data.active_on_discord_web) devices.push("WEB");
+  if (data.active_on_discord_vr) devices.push("VR");
+  return devices.length > 0 ? devices.join("+") : "NONE";
 }
 
 function pickPrimaryActivity(data) {
@@ -57,7 +75,7 @@ function pickPrimaryActivity(data) {
 
   if (activeApp) {
     const kickerMap = {
-      0: "PLAYING / ACTIVE",
+      0: "CODING / ACTIVE",
       1: "STREAMING",
       2: "LISTENING",
       3: "WATCHING",
@@ -69,25 +87,29 @@ function pickPrimaryActivity(data) {
       activeApp.type === 4
         ? activeApp.state || activeApp.name
         : activeApp.name;
+
     const subParts = [];
-    if (activeApp.type !== 4 && activeApp.details) subParts.push(activeApp.details);
-    if (activeApp.type !== 4 && activeApp.state) subParts.push(activeApp.state);
+    if (activeApp.type !== 4) {
+      if (activeApp.assets?.small_text) subParts.push(activeApp.assets.small_text);
+      if (activeApp.details) subParts.push(activeApp.details);
+      if (activeApp.assets?.large_text) subParts.push(activeApp.assets.large_text);
+      if (activeApp.state) subParts.push(activeApp.state);
+      const elapsed = formatElapsed(activeApp.timestamps?.start);
+      if (elapsed) subParts.push(elapsed);
+    }
 
     return {
       kicker: `${kickerPrefix} // HORIZON'S DEV LOUNGE`,
       title: truncate(mainTitle || "IN SESSION", 44),
-      meta: truncate(
-        subParts.join(" · ") || "SAKURA NIGHT TERMINAL",
-        58
-      ),
+      meta: truncate(subParts.join(" · ") || "SAKURA NIGHT TERMINAL", 64),
       accent: "#f9a8d4",
     };
   }
 
   return {
     kicker: "DISCORD PRESENCE // HORIZON'S DEV LOUNGE",
-    title: "IDLE IN SAKURA NIGHT",
-    meta: "NO ACTIVE APP RIGHT NOW · THEME: PIXEL SAKURA",
+    title: "ONLINE IN SAKURA NIGHT",
+    meta: "NO ACTIVE APP BROADCASTED · THEME: PIXEL SAKURA",
     accent: "#f472b6",
   };
 }
@@ -109,10 +131,15 @@ async function fetchLanyardPresence(userId) {
 function buildSvg(data) {
   const statusCfg = getStatusConfig(data.discord_status);
   const activity = pickPrimaryActivity(data);
-  const username = truncate(
-    data.discord_user?.global_name || data.discord_user?.username || "Horizon",
-    24
+  const device = getDeviceLabel(data);
+  const displayName = truncate(
+    data.discord_user?.global_name || data.discord_user?.display_name || "Kevin",
+    18
   );
+  const handle = truncate(data.discord_user?.username || "horizov", 18);
+  const tag = data.discord_user?.primary_guild?.tag
+    ? ` [${data.discord_user.primary_guild.tag}]`
+    : "";
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 170" width="100%" height="170" shape-rendering="crispEdges">
   <defs>
@@ -165,8 +192,8 @@ function buildSvg(data) {
   <text x="168" y="96" fill="#ffffff" font-size="24" font-weight="bold" font-family="monospace" letter-spacing="2">
     ${escapeXml(activity.title)}
   </text>
-  <text x="168" y="124" fill="#fbcfe8" font-size="14" font-family="monospace" letter-spacing="1">
-    ${escapeXml(`${username.toUpperCase()} · ${statusCfg.label} · ${activity.meta}`)}
+  <text x="168" y="124" fill="#fbcfe8" font-size="13" font-family="monospace" letter-spacing="1">
+    ${escapeXml(`${displayName.toUpperCase()} (@${handle})${tag} · ${statusCfg.label} [${device}] · ${activity.meta}`)}
   </text>
 
   <rect x="1020" y="34" width="130" height="8" fill="#3b1254" />
