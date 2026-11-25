@@ -6,9 +6,11 @@
   <a href="https://horizov.site">
     <img src="https://img.shields.io/badge/PORTFOLIO-horizov.site-0D1117?style=for-the-badge&logo=vercel&logoColor=A78BFA&labelColor=0D1117" alt="Website" />
   </a>
+  <br />
   <a href="https://discord.gg/ZAFA839gMe">
-    <img src="https://img.shields.io/badge/DISCORD-Horizon-0D1117?style=for-the-badge&logo=discord&logoColor=A78BFA&labelColor=0D1117" alt="Discord" />
+    <img src="https://img.shields.io/badge/DISCORD-Horizon%27s%20Dev%20Lounge-0D1117?style=for-the-badge&logo=discord&logoColor=A78BFA&labelColor=0D1117" alt="Discord" />
   </a>
+  <br />
   <a href="mailto:contact@horizov.site">
     <img src="https://img.shields.io/badge/EMAIL-contact@horizov.site-0D1117?style=for-the-badge&logo=gmail&logoColor=A78BFA&labelColor=0D1117" alt="Email" />
   </a>
