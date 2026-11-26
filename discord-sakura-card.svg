@@ -40,17 +40,17 @@
 
   <g class="pulse">
     <rect x="124" y="114" width="20" height="20" fill="#12051d" />
-    <rect x="128" y="118" width="12" height="12" fill="#4ade80" />
+    <rect x="128" y="118" width="12" height="12" fill="#a855f7" />
   </g>
 
-  <text x="168" y="62" fill="#f9a8d4" font-size="14" font-family="monospace" letter-spacing="2">
-    CODING / ACTIVE // HORIZON&apos;S DEV LOUNGE
+  <text x="168" y="62" fill="#f472b6" font-size="14" font-family="monospace" letter-spacing="2">
+    DISCORD PRESENCE // HORIZON&apos;S DEV LOUNGE
   </text>
   <text x="168" y="96" fill="#ffffff" font-size="24" font-weight="bold" font-family="monospace" letter-spacing="2">
-    Code
+    ONLINE IN SAKURA NIGHT
   </text>
   <text x="168" y="124" fill="#fbcfe8" font-size="13" font-family="monospace" letter-spacing="1">
-    KEVIN (@horizov) [AUDI] · ONLINE [DESKTOP] · Antigravity IDE · Editing a JS file · 2H 16M
+    KEVIN (@horizov) [AUDI] · OFFLINE [IDLE] · NO ACTIVE APP BROADCASTED · THEME: PIXEL SAKURA
   </text>
 
   <rect x="1020" y="34" width="130" height="8" fill="#3b1254" />
